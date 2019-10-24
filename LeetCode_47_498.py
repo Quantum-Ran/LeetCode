@@ -1,24 +1,24 @@
-from typing import List
+from typing import *
 
 
 class Solution:
     def permuteUnique(self, nums: List[int]) -> List[List[int]]:
-        res = []
-        # 要去重先排序
+        """
+        比46多了一个去重，每次添加就和上一个比较看是否相等
+        """
+        # 要去重，先排序
         nums.sort()
+        res = []
 
         def backtrack(b_nums, b_list):
-            # b_nums
-            # 截止条件
+            # 出口
             if not b_nums:
                 res.append(b_list)
-                # 递归永远要有个返回值
                 return
-            # 逻辑
-            for i in range(length_num := len(b_nums)):
+            for i in range(len(b_nums)):
+                # 从第二项开始和上一项比看看是否相同，相同跳过
                 if i > 0 and b_nums[i] == b_nums[i - 1]:
                     continue
-                # b_nums = b_nums[:i] + b_nums[i + 1:]
                 backtrack(b_nums[:i] + b_nums[i + 1:], b_list + [b_nums[i]])
 
         backtrack(nums, [])
@@ -26,4 +26,4 @@ class Solution:
 
 
 s = Solution()
-print(s.permuteUnique([1, 2, 1]))
+print(s.permuteUnique([1, 1, 2]))

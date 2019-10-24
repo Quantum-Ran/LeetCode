@@ -8,26 +8,32 @@ class TreeNode:
 
 class Solution:
     def __init__(self):
-        self.result = None
+        self.public_ancestor = None
 
-    def lowestCommonAncestor(self, root, p, q):
-        # 如果有根
-        def recursion_tree(root):
-            # 如果没有根肯定，不是公共祖先
-            if root is None:
+    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+        """
+        二叉树的最近公共祖先，这个祖先有可能在左也可能在右，也可能在中间。
+        所以遍历所有的节点，找到与目标相符的就标记为True。
+        如果某个节点有两个True，就证明他是公共祖先。
+        """
+
+        def backtrack(b_root):
+            # 判断是否根节点
+            if not b_root:
                 return False
-            # 调取左右节点的结果
-            left_bool = recursion_tree(root.left)
-            right_bool = recursion_tree(root.right)
-            # 如果当前节点=p,q就标记为True
-            # 当前节点有可能是左右
-            root_bool = True if root == p or root == q else False
-            # 如果有两个是True，就是公共节点
-            if root_bool + right_bool + left_bool > 1:
-                self.result = root
-            # 因为是是递归所以要给其他的递归返回值
-            # 如果，当前节点或者左右子节点，有找到了，就返回True
-            return root_bool or left_bool or right_bool
+            # 分发到左右节点
+            left = backtrack(b_root.left)
+            right = backtrack(b_root.right)
+            # 如果当前根节点和 p、q 相等就返回 True
+            current = b_root == p or b_root == q
+            # 如果有两个是 True 就是公共祖先
+            # 这样就会覆盖了原有公共父节点
+            ### self.public_ancestor = b_root if current + left + right > 1 else None ###
+            if current + left + right > 1:
+                self.public_ancestor = b_root
+            # 给递归个返回值
+            # 如果证明左右根节点有 True，证明当前节点在pq的连接点上
+            return current or left or right
 
-        recursion_tree(root)
-        return self.result
+        backtrack(root)
+        return self.public_ancestor

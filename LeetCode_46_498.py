@@ -1,18 +1,21 @@
-from typing import List
+from typing import *
 
 
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
+        """
+        都是已有的元素，也不增加也不减少，用回溯不停的挪位置
+        """
         res = []
 
         def backtrack(b_nums, b_list):
-            # 截止条件
+            # 出口
+            # b_nums 会越来越小
             if not b_nums:
                 res.append(b_list)
-                # 递归永远要有个返回值
                 return
-            # 逻辑
-            for i in range(length_num := len(b_nums)):
+            for i in range(len(b_nums)):
+                # 永远缺 i
                 # b_nums = b_nums[:i] + b_nums[i + 1:]
                 backtrack(b_nums[:i] + b_nums[i + 1:], b_list + [b_nums[i]])
 
