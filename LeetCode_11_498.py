@@ -40,10 +40,12 @@ class Solution:
             # 左右那边矮，就移动那边指针向里，看看能否遇到大的
             if height[left_ids] < height[right_ids]:
                 # 底部等于两个索引的差
-                max_area = max(height[left_ids] * (right_ids - left_ids), max_area)
+                max_area = max(height[left_ids] *
+                               (right_ids - left_ids), max_area)
                 left_ids += 1
             else:
-                max_area = max(height[right_ids] * (right_ids - left_ids), max_area)
+                max_area = max(height[right_ids] *
+                               (right_ids - left_ids), max_area)
                 right_ids -= 1
         return max_area
 
