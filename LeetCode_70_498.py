@@ -17,6 +17,7 @@ class Solution:
         f1, f2, f3 = 1, 2, 3
         # 要循环 n + 1 - 3
         for i in range(n - 2):
+            # 依次往前递进
             f3 = f2 + f1
             f1 = f2
             f2 = f3

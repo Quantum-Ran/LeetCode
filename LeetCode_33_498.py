@@ -5,7 +5,7 @@ class Solution:
 	def search(self, nums: List[int], target: int) -> int:
 		"""
 		先写 left, right = 1 ,length - 1
-		循环： 如果 右边 》= left 就不停
+		循环： 如果 右边 >= left 就不停
 		middle = left + (right - left) // 2 防止left 和 right 都和大 溢出
 		因为旋转，所以通过中间值判断那面有序
 		判断在左，右边变为中
