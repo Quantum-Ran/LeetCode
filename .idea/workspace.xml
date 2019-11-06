@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9252aeb-ebfb-42d5-b382-8506218bd30c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LeetCode_20_498.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode_367_498.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode_641_498.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode_69_498.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode_155_498.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode_239_498.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode_84_498.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode_15_498.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode_15_498.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode_283_498.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode_283_498.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode_33_498.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode_33_498.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode_70_498.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode_70_498.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode_20_498.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode_20_498.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +50,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.LeetCode_367_498">
+  <component name="RunManager" selected="Python.LeetCode_84_498">
     <configuration name="LeetCode_15_498" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="LeetCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -77,7 +73,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="LeetCode_283_498" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="LeetCode_20_498" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="LeetCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -90,7 +86,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode_283_498.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode_20_498.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -143,12 +139,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="LeetCode_84_498" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="LeetCode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode_84_498.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.LeetCode_84_498" />
+        <item itemvalue="Python.LeetCode_20_498" />
         <item itemvalue="Python.LeetCode_367_498" />
         <item itemvalue="Python.LeetCode_69_498" />
         <item itemvalue="Python.LeetCode_15_498" />
-        <item itemvalue="Python.LeetCode_283_498" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +186,8 @@
       <workItem from="1572849329832" duration="2029000" />
       <workItem from="1572951860301" duration="4759000" />
       <workItem from="1572957556102" duration="2272000" />
-      <workItem from="1572964191104" duration="1700000" />
+      <workItem from="1572964191104" duration="5801000" />
+      <workItem from="1573003734475" duration="6092000" />
     </task>
     <servers />
   </component>
@@ -188,9 +208,11 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/LeetCode$LeetCode_367_498.coverage" NAME="LeetCode_367_498 Coverage Results" MODIFIED="1572964777526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/LeetCode$LeetCode_367_498.coverage" NAME="LeetCode_367_498 Coverage Results" MODIFIED="1572966399684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LeetCode$LeetCode_283_498.coverage" NAME="LeetCode_283_498 Coverage Results" MODIFIED="1572956712516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LeetCode$LeetCode_15_498.coverage" NAME="LeetCode_15_498 Coverage Results" MODIFIED="1572957292589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LeetCode$LeetCode_69_498.coverage" NAME="LeetCode_69_498 Coverage Results" MODIFIED="1572960338545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/LeetCode$LeetCode_84_498.coverage" NAME="LeetCode_84_498 Coverage Results" MODIFIED="1573005947605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/LeetCode$LeetCode_20_498.coverage" NAME="LeetCode_20_498 Coverage Results" MODIFIED="1572967869927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
